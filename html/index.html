@@ -10,11 +10,19 @@
   <script src="/bower_components/angular-route/angular-route.js"></script>
   <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="/public/js/app.js"></script>
-  <script src="/public/js/routing.js"></script>
+  <script src="/public/js/routes.js"></script>
   <script src="/public/js/indexCtrl.js"></script>
 
 </head>
   <body>
+  <div class="row">
+    <div class="col-xs-12">
+      <nav>
+        <a ng-href="/">Home</a>
+        <a ng-href="/about">about</a>
+      </nav>
+    </div>
+  </div>
     <div class="container">
       <div ng-view></div>
     </div>

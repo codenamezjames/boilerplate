@@ -1,3 +1,6 @@
-angular.module('indexCtrl',[]).controller('indexCtrl', function($scope){
-  $scope.header = "Hello World";
+var app = angular.module('indexCtrl',[]);
+
+
+app.controller('indexCtrl', function($scope){
+  $scope.header = 'Hello World';
 });

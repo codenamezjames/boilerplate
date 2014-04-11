@@ -7,6 +7,15 @@ app.config(function($routeProvider, $locationProvider) {
       title:'Home',
       templateUrl: 'app/tpl/index.html',
       controller: 'indexCtrl'
+    }).when('/about',{
+      title:'About',
+      templateUrl: 'app/tpl/about.html',
+      controller: 'aboutCtrl'
+    });
+
+
+    $routeProvider.otherwise({
+      redirectTo:'/'
     });
     $locationProvider.html5Mode(true).hashPrefix('!');
 });
